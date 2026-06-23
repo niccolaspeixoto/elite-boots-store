@@ -10,6 +10,20 @@ O projeto foi desenvolvido com foco em praticar conceitos de desenvolvimento Ful
 
 ## Demonstração
 
+### Tela de Cadastro
+
+![Tela de Cadastro](./tela-cadastro.PNG)
+
+### Listagem de Produtos
+
+![Listagem de itens](./tela-listagem.PNG)
+
+### Tela de Edição
+
+![Edição de produto](./tela-edição.PNG)
+
+
+## Deploy
 Frontend:
 https://seu-site.vercel.app
 
