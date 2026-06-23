@@ -1,21 +1,40 @@
 import styled from 'styled-components'
 
 export const WrapperHeader = styled.div`
-display: flex;
-gap: 2rem;
-align-items: center;
-justify-content: center;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+
+    button{
+        display:none;
+    }
+
+    @media (min-width:300px) and (max-width: 768px) {
+        flex-direction: column;
+}
 `
 
 export const Description = styled.div`
     line-height: 1.6;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     text-align: left;
+
+    @media (min-width:300px) and (max-width: 768px) {
+
+        h1{
+            font-size: 2.5rem;
+        }
+    }
 `
 
 export const WrapperContent = styled.div`
     display: flex;
     justify-content: center;
+
+    @media (min-width:300px) and (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+    }
 `
 
 
@@ -31,8 +50,12 @@ export const LeftContent = styled.div`
         padding: 0.5rem;
         background-color: rgba(255, 255, 255, 0.1);
         display: flex;
+    }
 
-}
+    @media (min-width:300px) and (max-width: 768px) {
+        grid-template-columns: 1fr;
+        height: 100%;
+    }
 `
 
 export const WrapperInputs = styled.div`
@@ -76,10 +99,11 @@ export const WrapperSizes = styled.div`
         }
 
         &.selected {
-        background-color: #cb07f2;  // Cor quando estiver selecionado
-        color: #fff;
+            background-color: #cb07f2;
+            color: #fff;
+        }
     }
-    }
+    
     
 `
 
@@ -100,6 +124,11 @@ export const Techs = styled.div`
 
 export const RightContent = styled.div`
     margin-left: 2rem;
+
+    @media (min-width:300px) and (max-width: 768px) {
+        margin-left: 0;
+        margin-top: 2rem;
+    }
 `
 
 export const Preview = styled.div`
@@ -125,7 +154,6 @@ export const WrapperPreview = styled.div`
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 8px;
     height: 94%;
-
 `
 
 export const WrapperData = styled.div`
