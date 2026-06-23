@@ -165,7 +165,6 @@ function Home() {
             </StiledSquare>
 
             <Techs>
-              <StiledSquare>
                 <h3>TECNOLOGIA</h3>
                 <select name="technology" id="technology" value={tech} onChange={(e) => setTech(e.target.value)} placeholder="Selecione uma tecnologia">
                   <option value="">Selecione uma tecnologia</option>
@@ -173,7 +172,6 @@ function Home() {
                   <option value="ACADEMY">ACADEMY</option>
                   <option value="CLUB">CLUB</option>
                 </select>
-              </StiledSquare>
             </Techs>
           </LeftContent>
 
