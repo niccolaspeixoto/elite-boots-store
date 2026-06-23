@@ -24,7 +24,13 @@ export const Form = styled.form`
         &:hover{
             background-color: #3f0872;
         }
+
+        @media (min-width:300px) and (max-width: 768px) {
+            width: 100%;
+            font-size: 1.5rem;
+        }
     }
+
 `
 
 export default Form;

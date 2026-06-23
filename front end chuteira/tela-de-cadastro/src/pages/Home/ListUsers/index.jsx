@@ -5,7 +5,7 @@ import StiledSquare from "../../../components/StiledSquare";
 import ContainerStyle from "../../../components/ContainerStyle";
 import ButtonsStyle from "../../../components/ButtonsStyle";
 import { useNavigate } from 'react-router-dom'
-import { CardBoots, EditIcon, TrashIcon, WrapperBoots } from './styles';
+import { CardBoots, EditIcon, TrashIcon, WrapperBoots, Icons, Title } from './styles';
 
 import Trash from '../../../assets/trash-button.png'
 import Edit from '../../../assets/edit.png'
@@ -35,7 +35,7 @@ function ListBoot() {
 
     return (
         <ContainerStyle>
-            <h1>Listagem de Chuteiras</h1>
+            <Title>Listagem de Chuteiras</Title>
 
             <WrapperBoots>
                 {data.map((boot) => (
@@ -50,10 +50,10 @@ function ListBoot() {
                             <p>{boot.tech}</p>
                         </div>
 
-                        <div>
+                        <Icons>
                             <EditIcon src={Edit} onClick={() => navigate(`/edit/${boot.id}`)} />
                             <TrashIcon src={Trash} onClick={() => {deleteBoot(boot.id)}} />
-                        </div>
+                        </Icons>
                     </CardBoots>
                 ))}
             </WrapperBoots>
